@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { HeaderComponent } from '../shared/header/header.component';
-import { SidebarComponent } from '../shared/sidebar/sidebar.component';
-import { BreadcrumbsComponent } from '../shared/breadcrumbs/breadcrumbs.component';
+import { SettingsService } from '../services/settings.service';
+
+declare function customInitFunction();
 
 @Component({
   selector: 'app-pages',
@@ -12,9 +12,12 @@ import { BreadcrumbsComponent } from '../shared/breadcrumbs/breadcrumbs.componen
 })
 export class PagesComponent implements OnInit {
 
-  constructor() { }
+
+
+  constructor( private settingsServices: SettingsService) { }
 
   ngOnInit(): void {
+    customInitFunction();
   }
 
 }

@@ -11,11 +11,11 @@ export class ProgressComponent {
   progreso1: number = 25;
   progreso2: number = 35;
 
-  get getProgreso1(): string {
-    return `${this.getProgreso1}%`;
+  get getProgreso1() {
+    return `${ this.getProgreso1 }%`;
   }
 
-  get getProgreso2(): string {
-    return `${this.getProgreso2}%`;
+  get getProgreso2() {
+    return `${ this.getProgreso2 }%`;
   }
 }
